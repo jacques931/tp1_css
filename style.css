@@ -3,7 +3,7 @@ body{
 }
 
 .main-container {
-    padding: 0 1%;
+    padding: 0 2%;
 }
 
 header {
@@ -12,6 +12,18 @@ header {
     align-items: center;
     background: linear-gradient(to bottom, rgb(239, 242, 248), white 20%, white 90%, rgb(239, 242, 248));
     padding: 1rem 0;
+}
+
+#recherche_conteneur{
+    width: 25%;
+}
+
+#recherche_conteneur form{
+    display: flex;
+}
+
+#rechercheInput{
+    flex : 1;
 }
 
 a {
@@ -50,7 +62,7 @@ nav > ul> li {
     justify-content: center;
     position: relative;
     border-right: 2px solid white;
-    background: linear-gradient(to bottom, rgb(202, 213, 236), white 20%, white 30%, rgb(202, 213, 236));
+    background: linear-gradient(to bottom, rgba(209,223,232), white 20%, white 30%, rgba(209,223,232));
 }
 
 nav > ul > li:last-child {
@@ -73,7 +85,7 @@ nav ul ul {
     top: 105%;
     left: 0;
     right: 0;
-    background-color: rgb(224, 235, 255);
+    background-color: rgba(238,243,247);
     padding: 0;
 }
 
@@ -108,19 +120,19 @@ nav + ul > li > a{
 /*Section*/
 .title-container{
     font-size: 19px;
-    background-color: rgba(2, 35, 224, 0.842);
+    background-color: rgba(14,95,150);
     padding-left: 6vw;
     color: white;
 }
 
 .dashboard-title{
-    color: rgb(0, 11, 172);
+    color: rgba(31,115,167);
     padding-bottom: 0.5rem;
     font-weight: bold;
 }
 
 .article-container{
-    background-color: rgba(191, 248, 255, 0.26);
+    background-color: rgba(241,246,248);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
@@ -141,7 +153,7 @@ nav + ul > li > a{
 }
 
 .article{
-    background-color: rgba(191, 248, 255, 0.26);
+    background-color: rgba(241,246,248);
     margin-bottom: 1rem;
 }
 
@@ -154,7 +166,7 @@ nav + ul > li > a{
 }
 
 .article ul > li > a > span{
-    color: rgb(255, 94, 0);
+    color: rgba(164,87,82);
     font-weight: bold;
 }
 
@@ -189,6 +201,7 @@ footer > div{
     }
     
     header > div,
+    header > div#recherche_conteneur,
     header > div#recherche_conteneur form #rechercheInput,
     header > div:first-child > img{
         width: 100%;
@@ -198,17 +211,13 @@ footer > div{
         margin: 1.5rem;
     }
 
-    header > div#recherche_conteneur form {
-        display: flex;
-    }
-
     nav.row {
         height: auto;
         margin-top : 0;
     }
 
     nav > ul > li {
-        border-bottom: 3px solid rgb(0, 47, 255);
+        border-bottom: 3px solid rgba(15,94,151);
         border-right: none;
         height: 3rem;
     }
@@ -223,6 +232,10 @@ footer > div{
 
     nav + ul{
         padding-left: 1rem;
+    }
+
+    .article-container{
+        margin-bottom: 1rem;
     }
 
     /* n'est pas forcrement neccesaire */
